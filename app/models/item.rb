@@ -1,6 +1,7 @@
 class Item < ApplicationRecord
   # <<アソシエーション>>
   belongs_to :user
+  has_one :order
 
   # Active_hashとのアソシエーション
   extend ActiveHash::Associations::ActiveRecordExtensions
